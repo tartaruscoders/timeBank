@@ -8,21 +8,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>timeBank</title>
     <link rel='stylesheet' href="{% static 'css/home/bootstrap.min.css' %}">
+    <link rel='stylesheet' href="{% static 'css/signup/unicorn.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css//signup/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/home/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/nav/styles.css' %}">
 </head>
 <body>
-    {% include "navbar.html" %}
-    {% block content %}
-    {% endblock content %}
-
-
-<script  type="text/javascript" src="{% static 'js/home/scripts.js' %}"></script>
-
-
+    {% include 'navbar.html' %}
+    {% block signUpContent %}
+    {% endblock signUpContent%}
+    
+<script  type="text/javascript" src="{% static 'js/home/scripts.js' %}"></script> 
 <script  type="text/javascript" src="{% static 'js/home/jquery.js' %}"></script>
- <script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
-<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
 
+ <script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
+ <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
 </body>
 </html>

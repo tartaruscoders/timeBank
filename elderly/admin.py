@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Elderly
+# from .models import elderly
 
-admin.site.register(Elderly)
+# admin.site.register(elderly)

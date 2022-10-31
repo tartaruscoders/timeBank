@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-vq44krxe))$#kq7tvwoe9o#o40ey+!0au)hpeuz7t(wjqg9i9(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['timebank-production.up.railway.app']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['timebank-production.up.railway.app']
 
 
 # Application definition
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jquery',
     'core',
-    # 'elderly',
+    'elderly',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'timeBank_Django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

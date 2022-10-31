@@ -1,3 +1,4 @@
+{% load static %}
 <header class="cd-header">
     <div class="header-wrapper">
         <div class="logo-wrap">
@@ -15,8 +16,8 @@
 <div class="nav">
     <div class="nav__content">
         <ul class="nav__list">
-            <li class="nav__list-item active-nav"><a href="#" class="hover-target">Home-ホームページ</a></li>
-            <li class="nav__list-item"><a href="#" class="hover-target">Elderly-老人</a></li>
+            <li class="nav__list-item active-nav"><a href="{% url 'core:home' %}" class="hover-target">Home-ホームページ</a></li>
+            <li class="nav__list-item"><a href="{% url 'elderly:elderAccountLogin' %}" class="hover-target">Elderly-老人</a></li>
             <li class="nav__list-item"><a href="#" class="hover-target">Volunter-ボランティア</a></li>
             <li class="nav__list-item"><a href="#" class="hover-target">Organisation-制度</a></li>
         </ul>
